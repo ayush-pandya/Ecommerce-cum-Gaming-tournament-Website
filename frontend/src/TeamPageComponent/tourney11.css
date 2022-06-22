@@ -1,0 +1,51 @@
+.form-container{
+    background:lightblue;
+    padding:20px;
+    border-radius:10px;
+    margin-top: 129px;
+    margin-left:-110px;
+    width: 160%;
+    height: 160vh;
+    box-shadow:0px 0px 10px 0px #000;
+    border:7px solid black;
+}
+.form-container:hover{
+    background-color: lightgreen;
+}
+.form-control{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bolder;
+}
+.start{
+    font-size: 24px;
+    font-weight: bold;
+    color:blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 25px;
+}
+textarea{
+    height:100px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+}
+.jumbotron{
+    background-image:url('https://w0.peakpx.com/wallpaper/538/524/HD-wallpaper-unreal-tournament-game.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    height:190vh;
+
+}
+label{
+    width:130px;
+    color:#757575;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+#btn{
+    width:80%;
+}

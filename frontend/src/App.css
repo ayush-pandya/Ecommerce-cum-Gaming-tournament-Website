@@ -1,0 +1,443 @@
+.App {
+  text-align: center;
+  background: url("./HomePageComponent/Home_Product/background.jpg") repeat-y center;
+  /* height: 100vh; */
+  background-repeat: repeat-y;
+}
+
+.product{
+  display: grid;
+  height: 150px;
+  margin: 10px;
+  /* background-color: black; */
+  border: 4px solid black;
+  z-index: 1; 
+  padding: 5px;
+  grid-auto-flow: column;
+  position: inherit;
+  max-height: 150px;
+}
+.product_rating{
+  display: flex;
+  font-weight: bold;
+  margin-top: 2px;
+}
+.product_info{
+  /* display: inline-block; */
+  padding: 10px;
+  width: 450px;
+  color: white;
+  max-height: 100px;
+  margin-bottom: 15px;
+}
+.product_price{
+  margin-top: 2px;
+}
+.product_img{
+  border-color: black;
+  max-height: 120px ;
+  object-fit: fill;
+  margin-bottom: 15px;
+}
+.product_description::-webkit-scrollbar{
+  display: none;
+  
+}
+.product_description{
+  overflow-y: scroll;
+  overflow-y: 200px;
+  color: white;
+  width: 600px;
+  max-height: 120px;
+}
+.product > button{
+  background-color: black;
+  border: 3px solid;
+  max-height: 30px;
+  max-width: 160px;
+  font-weight: bolder;
+  color: white;
+  border-color: blue;
+  right: 0cm;
+}
+
+.productcart{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.productcart_image{
+  object-fit: contain;
+  width: 160px;
+  height: 160px;
+  border: 1px solid #ccc;
+}
+.productcart_title{
+  font-size: 16px;
+  font-weight: 600;
+}
+.productcart_info{
+  padding-left: 20px;
+}
+.productcart_info > button{
+  background-color: black;
+  color: wheat;
+  border: 1px solid;
+  margin-top: 10px;
+}
+
+.product_page{
+  background-image: url("https://lolstatic-a.akamaihd.net/rso-login-page/3.1.5/assets/riot_desktop_background_2x.jpg");
+  background-repeat: repeat-y;
+  min-height: 130vh;
+}
+
+.navbar{
+  background-color: black;
+  height: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  
+}
+.menu-bars{
+  margin-left: 1rem;
+  font-size: 1rem;
+  background: none;
+  color: red;
+}
+.nav-menu{
+  color: white;
+  background-color: black;
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: auto;
+  left: -100%;
+  transition: 850ms;
+}
+.nav-menu.active{
+  left:0;
+  transition: 350ms;
+}
+.nav-text{
+  color: white;
+  display: flex;
+  /* grid-auto-flow: column; */
+  justify-content: start;
+  align-items: center;
+  
+  padding: 8px 8px 8px 0px;
+  margin-top: 15px;
+  list-style: none;
+  /* height: 60px; */
+}
+.nav-text:hover{
+  /* background-color: red; */
+  border-style: solid;
+  border-radius: 2px;
+  border-color: blue;
+}
+.nav-menu-items ul{
+  color: white;
+  font-size: 20px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
+  border-radius: 4px;
+}
+.nav-menu-items{
+  width: 100%;
+}
+.nav-toggle{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.item-image{
+  max-width: 100px;
+  height: auto;
+}
+.product-title{
+  color: white;
+}
+.item-info{
+  display: grid;
+  margin-left: 10px;
+  grid-template-rows: 30px;
+}
+
+.subtotal{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 3px; */
+  padding: 10px;
+}
+.checkout_button{
+      background-color: black;
+  color: wheat;
+  border: 1px solid;
+  margin-top: 10px;
+  padding: 8px;
+  margin: 5px;
+}
+/* .subtotal_gift{
+  display: flex;
+  align-items: center;
+} */
+
+.checkout{
+  display: flex;
+  padding: 20px;
+  /* background-color: white; */
+  height: max-content;
+  height: 130vh;
+  background: url("./HomePageComponent/Home_Product/background.jpg") repeat-y center;
+  color: white;
+}
+.checkout_title{
+  margin-right: 10px;
+  padding: 10px;
+  border-bottom: 1px solid lightgrey;
+}
+.check_ad{
+  width: 100%;
+  margin-bottom: 10px;
+  
+}
+.checkout_right{
+  color: white;
+}
+
+.d-block{
+  width: 100%;
+height: 400px;
+position: relative;
+object-fit: cover;
+/* padding: 30px; */
+}
+
+.header{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  /* color: white; */
+}
+.header_title{
+  padding-left: 20px;
+  color:white;
+  font-weight: bold;
+}
+.header_logo{
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  height: 60px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.header_search{
+  display: flex;
+  flex: 1;
+  align-items:center;
+  border-radius:24px;
+}
+.header_searchInput{
+  height: 12px;
+  padding: 10px;
+  border: none;
+  /* width: 100%; */
+}
+.header_searchIcon{
+  padding: 5px;
+  height: 22px !important;
+  background-color: #e61919;
+}
+.header_nav{
+  display: flex;
+  justify-content: space-evenly;
+  padding-right: 100px;
+}
+.header_option{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+  font-weight: bolder;
+}
+.header_optionLineOne{
+  font-size: 10px;
+}
+.header_optionBasket{
+  display: flex;
+  align-items:center;
+  color:white;
+  padding-right: 20px;
+}
+.header_productCount{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.header_link{
+  color: white;
+  text-decoration: none;
+}
+
+.Home{
+  height: 130vh;
+  background: url("./HomePageComponent/Home_Product/background.jpg") repeat-y center;
+  /* height: 100vh; */
+}
+.carousel {
+  position: absolute;
+  height: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.carousel_image{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
+}
+.carousel_track-container{
+  background-color: black;
+  height: 100%;
+  position: relative;
+}
+.carousel_track{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.carousel_slide{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 5px;
+  width: 99.3%;
+  
+}
+.carousel_button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  /* color: gray; */
+  /* background-color: black; */
+}
+.carousel_button--left{
+  left: 20px;
+  background: none;
+  margin-left: 10px;
+}
+.carousel_button--right{
+  right: 20px;
+  background: none;
+  margin-right: 10px;
+}
+.carousel_nav{
+  display: flex;
+  position: relative;
+  
+  justify-content:center;
+  padding: 10px;
+  margin: -40px 0px;
+}
+.carousel_indicator{
+  border: 0;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  background: rgba(0, 0, 0, 1);
+}
+.carousel_indicator.current-slide{
+  background-color: white;
+}
+.Products{
+  padding: 30px;
+}
+.Row1{
+  display: grid;
+  padding: 30px;
+  margin-left: 110px;
+  grid-auto-flow: column;
+}
+.Row2{
+  display: grid;
+  padding-top: 50px;
+  margin-left: 270px;
+  grid-auto-flow: column;
+}
+.home_product{
+  width: 200px;
+  height: 150px;
+  background-color: black;
+  align-items: center;
+  color: white;
+}
+.product_name{
+  display: block;
+  top: 65px;
+  align-content: center;
+  font-weight: bolder;
+  position: relative;
+}
+.processor:hover{    
+  background: url("./HomePageComponent/Home_Product/processor.jpg");
+  background-size:cover;
+  font-weight: bolder;
+}
+.ram:hover{    
+  background: url("./HomePageComponent/Home_Product/ram.jpg");
+  font-weight: bolder;
+  background-size:cover;
+}
+.motherboard:hover{    
+  background: url("./HomePageComponent/Home_Product/Motherboard.jpg");
+  font-weight: bolder;
+  background-size:cover;
+}
+.gpu:hover{    
+  background: url("./HomePageComponent/Home_Product/Gpu.jpeg");
+  font-weight: bolder;
+  background-size:cover;
+}
+.games:hover{    
+  background: url("./HomePageComponent/Home_Product/games.png");
+  color: transparent;
+  background-size:cover;
+  
+}
+.giftcards:hover{    
+  background: url("./HomePageComponent/Home_Product/giftcards.png");
+  background-position: center;
+  background-size:cover;
+  color: transparent;
+
+}
+.tornament:hover{    
+  background: url("./HomePageComponent/Home_Product/tornament.png");
+  background-position: center;
+  color: transparent;
+  background-size:cover;
+  font-weight: bolder;
+}
